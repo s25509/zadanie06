@@ -40686,8 +40686,8 @@
     </schema>
     <schema id="12044" parent="3889" name="s25509">
       <Current>1</Current>
-      <IntrospectionTimestamp>2024-05-30.12:05:58.783</IntrospectionTimestamp>
-      <LastIntrospectionLocalTimestamp>2024-05-30.08:05:59</LastIntrospectionLocalTimestamp>
+      <IntrospectionTimestamp>2024-05-30.13:32:42.410</IntrospectionTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-05-30.09:32:42</LastIntrospectionLocalTimestamp>
       <ObjectId>3583</ObjectId>
     </schema>
     <schema id="12045" parent="3889" name="s25510">
@@ -44862,76 +44862,106 @@
       <ModifiedTimestamp>2024-05-19.14:15:35.677</ModifiedTimestamp>
       <ObjectId>1417690277</ObjectId>
     </table>
-    <table id="13433" parent="12044" name="Trip">
+    <table id="13433" parent="12044" name="Doctor">
+      <CreatedTimestamp>2024-05-30.13:32:06.183</CreatedTimestamp>
+      <ModifiedTimestamp>2024-05-30.13:32:06.213</ModifiedTimestamp>
+      <ObjectId>2030600501</ObjectId>
+    </table>
+    <table id="13434" parent="12044" name="Medicament">
+      <CreatedTimestamp>2024-05-30.13:32:06.197</CreatedTimestamp>
+      <ModifiedTimestamp>2024-05-30.13:32:06.223</ModifiedTimestamp>
+      <ObjectId>2062600615</ObjectId>
+    </table>
+    <table id="13435" parent="12044" name="Patient">
+      <CreatedTimestamp>2024-05-30.13:32:06.203</CreatedTimestamp>
+      <ModifiedTimestamp>2024-05-30.13:32:06.213</ModifiedTimestamp>
+      <ObjectId>2094600729</ObjectId>
+    </table>
+    <table id="13436" parent="12044" name="Prescription">
+      <CreatedTimestamp>2024-05-30.13:32:06.210</CreatedTimestamp>
+      <ModifiedTimestamp>2024-05-30.13:32:06.243</ModifiedTimestamp>
+      <ObjectId>2126600843</ObjectId>
+    </table>
+    <table id="13437" parent="12044" name="PrescriptionMedicament">
+      <CreatedTimestamp>2024-05-30.13:32:06.220</CreatedTimestamp>
+      <ModifiedTimestamp>2024-05-30.13:32:06.260</ModifiedTimestamp>
+      <ObjectId>43117423</ObjectId>
+    </table>
+    <table id="13438" parent="12044" name="Trip">
       <CreatedTimestamp>2024-05-19.14:15:35.670</CreatedTimestamp>
       <ModifiedTimestamp>2024-05-19.14:15:35.680</ModifiedTimestamp>
       <ObjectId>1449690391</ObjectId>
     </table>
-    <column id="13434" parent="13429" name="IdClient">
+    <table id="13439" parent="12044" name="__EFMigrationsHistory">
+      <CreatedTimestamp>2024-05-30.13:32:06.100</CreatedTimestamp>
+      <ModifiedTimestamp>2024-05-30.13:32:06.100</ModifiedTimestamp>
+      <ObjectId>1998600387</ObjectId>
+    </table>
+    <column id="13440" parent="13429" name="IdClient">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1(6)</SequenceIdentity>
     </column>
-    <column id="13435" parent="13429" name="FirstName">
+    <column id="13441" parent="13429" name="FirstName">
       <DasType>nvarchar(120 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="13436" parent="13429" name="LastName">
+    <column id="13442" parent="13429" name="LastName">
       <DasType>nvarchar(120 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="13437" parent="13429" name="Email">
+    <column id="13443" parent="13429" name="Email">
       <DasType>nvarchar(120 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="13438" parent="13429" name="Telephone">
+    <column id="13444" parent="13429" name="Telephone">
       <DasType>nvarchar(120 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="13439" parent="13429" name="Pesel">
+    <column id="13445" parent="13429" name="Pesel">
       <DasType>nvarchar(120 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <index id="13440" parent="13429" name="Client_pk">
+    <index id="13446" parent="13429" name="Client_pk">
       <Clustering>1</Clustering>
       <ColNames>IdClient</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="13441" parent="13429" name="Client_pk">
+    <key id="13447" parent="13429" name="Client_pk">
       <CreatedTimestamp>2024-05-19.14:15:35.663</CreatedTimestamp>
       <ModifiedTimestamp>2024-05-19.14:15:35.663</ModifiedTimestamp>
       <ObjectId>1337689992</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>Client_pk</UnderlyingIndexName>
     </key>
-    <column id="13442" parent="13430" name="IdClient">
+    <column id="13448" parent="13430" name="IdClient">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="13443" parent="13430" name="IdTrip">
+    <column id="13449" parent="13430" name="IdTrip">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="13444" parent="13430" name="RegisteredAt">
+    <column id="13450" parent="13430" name="RegisteredAt">
       <DasType>datetime|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="13445" parent="13430" name="PaymentDate">
+    <column id="13451" parent="13430" name="PaymentDate">
       <DasType>datetime|0s</DasType>
       <Position>4</Position>
     </column>
-    <foreign-key id="13446" parent="13430" name="Table_5_Client">
+    <foreign-key id="13452" parent="13430" name="Table_5_Client">
       <ColNames>IdClient</ColNames>
       <CreatedTimestamp>2024-05-19.14:15:35.680</CreatedTimestamp>
       <ModifiedTimestamp>2024-05-19.14:15:35.680</ModifiedTimestamp>
@@ -44940,7 +44970,7 @@
       <RefTableId>1321689935</RefTableId>
       <RefTableName>Client</RefTableName>
     </foreign-key>
-    <foreign-key id="13447" parent="13430" name="Table_5_Trip">
+    <foreign-key id="13453" parent="13430" name="Table_5_Trip">
       <ColNames>IdTrip</ColNames>
       <CreatedTimestamp>2024-05-19.14:15:35.680</CreatedTimestamp>
       <ModifiedTimestamp>2024-05-19.14:15:35.680</ModifiedTimestamp>
@@ -44949,7 +44979,7 @@
       <RefTableId>1449690391</RefTableId>
       <RefTableName>Trip</RefTableName>
     </foreign-key>
-    <index id="13448" parent="13430" name="Client_Trip_pk">
+    <index id="13454" parent="13430" name="Client_Trip_pk">
       <Clustering>1</Clustering>
       <ColNames>IdClient
 IdTrip</ColNames>
@@ -44957,49 +44987,49 @@ IdTrip</ColNames>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="13449" parent="13430" name="Client_Trip_pk">
+    <key id="13455" parent="13430" name="Client_Trip_pk">
       <CreatedTimestamp>2024-05-19.14:15:35.667</CreatedTimestamp>
       <ModifiedTimestamp>2024-05-19.14:15:35.667</ModifiedTimestamp>
       <ObjectId>1369690106</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>Client_Trip_pk</UnderlyingIndexName>
     </key>
-    <column id="13450" parent="13431" name="IdCountry">
+    <column id="13456" parent="13431" name="IdCountry">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1(5)</SequenceIdentity>
     </column>
-    <column id="13451" parent="13431" name="Name">
+    <column id="13457" parent="13431" name="Name">
       <DasType>nvarchar(120 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <index id="13452" parent="13431" name="Country_pk">
+    <index id="13458" parent="13431" name="Country_pk">
       <Clustering>1</Clustering>
       <ColNames>IdCountry</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="13453" parent="13431" name="Country_pk">
+    <key id="13459" parent="13431" name="Country_pk">
       <CreatedTimestamp>2024-05-19.14:15:35.670</CreatedTimestamp>
       <ModifiedTimestamp>2024-05-19.14:15:35.670</ModifiedTimestamp>
       <ObjectId>1401690220</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>Country_pk</UnderlyingIndexName>
     </key>
-    <column id="13454" parent="13432" name="IdCountry">
+    <column id="13460" parent="13432" name="IdCountry">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="13455" parent="13432" name="IdTrip">
+    <column id="13461" parent="13432" name="IdTrip">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <foreign-key id="13456" parent="13432" name="Country_Trip_Country">
+    <foreign-key id="13462" parent="13432" name="Country_Trip_Country">
       <ColNames>IdCountry</ColNames>
       <CreatedTimestamp>2024-05-19.14:15:35.673</CreatedTimestamp>
       <ModifiedTimestamp>2024-05-19.14:15:35.673</ModifiedTimestamp>
@@ -45008,7 +45038,7 @@ IdTrip</ColNames>
       <RefTableId>1385690163</RefTableId>
       <RefTableName>Country</RefTableName>
     </foreign-key>
-    <foreign-key id="13457" parent="13432" name="Country_Trip_Trip">
+    <foreign-key id="13463" parent="13432" name="Country_Trip_Trip">
       <ColNames>IdTrip</ColNames>
       <CreatedTimestamp>2024-05-19.14:15:35.677</CreatedTimestamp>
       <ModifiedTimestamp>2024-05-19.14:15:35.677</ModifiedTimestamp>
@@ -45017,7 +45047,7 @@ IdTrip</ColNames>
       <RefTableId>1449690391</RefTableId>
       <RefTableName>Trip</RefTableName>
     </foreign-key>
-    <index id="13458" parent="13432" name="Country_Trip_pk">
+    <index id="13464" parent="13432" name="Country_Trip_pk">
       <Clustering>1</Clustering>
       <ColNames>IdCountry
 IdTrip</ColNames>
@@ -45025,76 +45055,370 @@ IdTrip</ColNames>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="13459" parent="13432" name="Country_Trip_pk">
+    <key id="13465" parent="13432" name="Country_Trip_pk">
       <CreatedTimestamp>2024-05-19.14:15:35.670</CreatedTimestamp>
       <ModifiedTimestamp>2024-05-19.14:15:35.670</ModifiedTimestamp>
       <ObjectId>1433690334</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>Country_Trip_pk</UnderlyingIndexName>
     </key>
-    <column id="13460" parent="13433" name="IdTrip">
+    <column id="13466" parent="13433" name="IdDoctor">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="13467" parent="13433" name="FirstName">
+      <DasType>nvarchar(100 char)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="13468" parent="13433" name="LastName">
+      <DasType>nvarchar(100 char)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="13469" parent="13433" name="Email">
+      <DasType>nvarchar(100 char)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <index id="13470" parent="13433" name="PK_Doctor">
+      <Clustering>1</Clustering>
+      <ColNames>IdDoctor</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="13471" parent="13433" name="PK_Doctor">
+      <CreatedTimestamp>2024-05-30.13:32:06.187</CreatedTimestamp>
+      <ModifiedTimestamp>2024-05-30.13:32:06.187</ModifiedTimestamp>
+      <ObjectId>2046600558</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_Doctor</UnderlyingIndexName>
+    </key>
+    <column id="13472" parent="13434" name="IdMedicament">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="13473" parent="13434" name="Name">
+      <DasType>nvarchar(100 char)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="13474" parent="13434" name="Description">
+      <DasType>nvarchar(100 char)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="13475" parent="13434" name="Type">
+      <DasType>nvarchar(100 char)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <index id="13476" parent="13434" name="PK_Medicament">
+      <Clustering>1</Clustering>
+      <ColNames>IdMedicament</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="13477" parent="13434" name="PK_Medicament">
+      <CreatedTimestamp>2024-05-30.13:32:06.200</CreatedTimestamp>
+      <ModifiedTimestamp>2024-05-30.13:32:06.200</ModifiedTimestamp>
+      <ObjectId>2078600672</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_Medicament</UnderlyingIndexName>
+    </key>
+    <column id="13478" parent="13435" name="IdPatient">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="13479" parent="13435" name="FirstName">
+      <DasType>nvarchar(100 char)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="13480" parent="13435" name="LastName">
+      <DasType>nvarchar(100 char)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="13481" parent="13435" name="Birthdate">
+      <DasType>date|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <index id="13482" parent="13435" name="PK_Patient">
+      <Clustering>1</Clustering>
+      <ColNames>IdPatient</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="13483" parent="13435" name="PK_Patient">
+      <CreatedTimestamp>2024-05-30.13:32:06.207</CreatedTimestamp>
+      <ModifiedTimestamp>2024-05-30.13:32:06.207</ModifiedTimestamp>
+      <ObjectId>2110600786</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_Patient</UnderlyingIndexName>
+    </key>
+    <column id="13484" parent="13436" name="IdPrescription">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="13485" parent="13436" name="IdPatient">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="13486" parent="13436" name="IdDoctor">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="13487" parent="13436" name="Date">
+      <DasType>date|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="13488" parent="13436" name="DueDate">
+      <DasType>date|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <foreign-key id="13489" parent="13436" name="FK_Prescription_Patient_IdPatient">
+      <ColNames>IdPatient</ColNames>
+      <CreatedTimestamp>2024-05-30.13:32:06.213</CreatedTimestamp>
+      <ModifiedTimestamp>2024-05-30.13:32:06.213</ModifiedTimestamp>
+      <ObjectId>27117366</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <RefColNames>IdPatient</RefColNames>
+      <RefTableId>2094600729</RefTableId>
+      <RefTableName>Patient</RefTableName>
+    </foreign-key>
+    <foreign-key id="13490" parent="13436" name="FK_Prescription_Doctor_IdDoctor">
+      <ColNames>IdDoctor</ColNames>
+      <CreatedTimestamp>2024-05-30.13:32:06.213</CreatedTimestamp>
+      <ModifiedTimestamp>2024-05-30.13:32:06.213</ModifiedTimestamp>
+      <ObjectId>11117309</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <RefColNames>IdDoctor</RefColNames>
+      <RefTableId>2030600501</RefTableId>
+      <RefTableName>Doctor</RefTableName>
+    </foreign-key>
+    <index id="13491" parent="13436" name="PK_Prescription">
+      <Clustering>1</Clustering>
+      <ColNames>IdPrescription</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <index id="13492" parent="13436" name="IX_Prescription_IdDoctor">
+      <ColNames>IdDoctor</ColNames>
+      <Position>2</Position>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <index id="13493" parent="13436" name="IX_Prescription_IdPatient">
+      <ColNames>IdPatient</ColNames>
+      <Position>3</Position>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="13494" parent="13436" name="PK_Prescription">
+      <CreatedTimestamp>2024-05-30.13:32:06.213</CreatedTimestamp>
+      <ModifiedTimestamp>2024-05-30.13:32:06.213</ModifiedTimestamp>
+      <ObjectId>2142600900</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_Prescription</UnderlyingIndexName>
+    </key>
+    <column id="13495" parent="13437" name="IdMedicament">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="13496" parent="13437" name="IdPrescription">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="13497" parent="13437" name="Dose">
+      <DasType>int|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="13498" parent="13437" name="Details">
+      <DasType>nvarchar(100 char)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <foreign-key id="13499" parent="13437" name="FK_PrescriptionMedicament_Medicament_IdMedicament">
+      <ColNames>IdMedicament</ColNames>
+      <CreatedTimestamp>2024-05-30.13:32:06.223</CreatedTimestamp>
+      <ModifiedTimestamp>2024-05-30.13:32:06.223</ModifiedTimestamp>
+      <ObjectId>75117537</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <RefColNames>IdMedicament</RefColNames>
+      <RefTableId>2062600615</RefTableId>
+      <RefTableName>Medicament</RefTableName>
+    </foreign-key>
+    <foreign-key id="13500" parent="13437" name="FK_PrescriptionMedicament_Prescription_IdPrescription">
+      <ColNames>IdPrescription</ColNames>
+      <CreatedTimestamp>2024-05-30.13:32:06.223</CreatedTimestamp>
+      <ModifiedTimestamp>2024-05-30.13:32:06.223</ModifiedTimestamp>
+      <ObjectId>91117594</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <RefColNames>IdPrescription</RefColNames>
+      <RefTableId>2126600843</RefTableId>
+      <RefTableName>Prescription</RefTableName>
+    </foreign-key>
+    <index id="13501" parent="13437" name="PK_PrescriptionMedicament">
+      <Clustering>1</Clustering>
+      <ColNames>IdMedicament
+IdPrescription</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <index id="13502" parent="13437" name="IX_PrescriptionMedicament_IdPrescription">
+      <ColNames>IdPrescription</ColNames>
+      <Position>2</Position>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="13503" parent="13437" name="PK_PrescriptionMedicament">
+      <CreatedTimestamp>2024-05-30.13:32:06.223</CreatedTimestamp>
+      <ModifiedTimestamp>2024-05-30.13:32:06.223</ModifiedTimestamp>
+      <ObjectId>59117480</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_PrescriptionMedicament</UnderlyingIndexName>
+    </key>
+    <column id="13504" parent="13438" name="IdTrip">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1(5)</SequenceIdentity>
     </column>
-    <column id="13461" parent="13433" name="Name">
+    <column id="13505" parent="13438" name="Name">
       <DasType>nvarchar(120 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="13462" parent="13433" name="Description">
+    <column id="13506" parent="13438" name="Description">
       <DasType>nvarchar(220 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="13463" parent="13433" name="DateFrom">
+    <column id="13507" parent="13438" name="DateFrom">
       <DasType>datetime|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="13464" parent="13433" name="DateTo">
+    <column id="13508" parent="13438" name="DateTo">
       <DasType>datetime|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="13465" parent="13433" name="MaxPeople">
+    <column id="13509" parent="13438" name="MaxPeople">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <index id="13466" parent="13433" name="Trip_pk">
+    <index id="13510" parent="13438" name="Trip_pk">
       <Clustering>1</Clustering>
       <ColNames>IdTrip</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="13467" parent="13433" name="Trip_pk">
+    <key id="13511" parent="13438" name="Trip_pk">
       <CreatedTimestamp>2024-05-19.14:15:35.670</CreatedTimestamp>
       <ModifiedTimestamp>2024-05-19.14:15:35.670</ModifiedTimestamp>
       <ObjectId>1465690448</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>Trip_pk</UnderlyingIndexName>
     </key>
-    <partition id="13468" parent="13440">
+    <column id="13512" parent="13439" name="MigrationId">
+      <DasType>nvarchar(150 char)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="13513" parent="13439" name="ProductVersion">
+      <DasType>nvarchar(32 char)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <index id="13514" parent="13439" name="PK___EFMigrationsHistory">
+      <Clustering>1</Clustering>
+      <ColNames>MigrationId</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="13515" parent="13439" name="PK___EFMigrationsHistory">
+      <CreatedTimestamp>2024-05-30.13:32:06.100</CreatedTimestamp>
+      <ModifiedTimestamp>2024-05-30.13:32:06.100</ModifiedTimestamp>
+      <ObjectId>2014600444</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK___EFMigrationsHistory</UnderlyingIndexName>
+    </key>
+    <partition id="13516" parent="13446">
       <ObjectId>72057608371830784</ObjectId>
       <Position>1</Position>
     </partition>
-    <partition id="13469" parent="13448">
+    <partition id="13517" parent="13454">
       <ObjectId>72057608371896320</ObjectId>
       <Position>1</Position>
     </partition>
-    <partition id="13470" parent="13452">
+    <partition id="13518" parent="13458">
       <ObjectId>72057608371961856</ObjectId>
       <Position>1</Position>
     </partition>
-    <partition id="13471" parent="13458">
+    <partition id="13519" parent="13464">
       <ObjectId>72057608372027392</ObjectId>
       <Position>1</Position>
     </partition>
-    <partition id="13472" parent="13466">
+    <partition id="13520" parent="13470">
+      <ObjectId>72057608433434624</ObjectId>
+      <Position>1</Position>
+    </partition>
+    <partition id="13521" parent="13476">
+      <ObjectId>72057608433500160</ObjectId>
+      <Position>1</Position>
+    </partition>
+    <partition id="13522" parent="13482">
+      <ObjectId>72057608433565696</ObjectId>
+      <Position>1</Position>
+    </partition>
+    <partition id="13523" parent="13491">
+      <ObjectId>72057608433631232</ObjectId>
+      <Position>1</Position>
+    </partition>
+    <partition id="13524" parent="13492">
+      <ObjectId>72057608433762304</ObjectId>
+      <Position>1</Position>
+    </partition>
+    <partition id="13525" parent="13493">
+      <ObjectId>72057608433827840</ObjectId>
+      <Position>1</Position>
+    </partition>
+    <partition id="13526" parent="13501">
+      <ObjectId>72057608433696768</ObjectId>
+      <Position>1</Position>
+    </partition>
+    <partition id="13527" parent="13502">
+      <ObjectId>72057608433893376</ObjectId>
+      <Position>1</Position>
+    </partition>
+    <partition id="13528" parent="13510">
       <ObjectId>72057608372092928</ObjectId>
+      <Position>1</Position>
+    </partition>
+    <partition id="13529" parent="13514">
+      <ObjectId>72057608433369088</ObjectId>
       <Position>1</Position>
     </partition>
   </database-model>
