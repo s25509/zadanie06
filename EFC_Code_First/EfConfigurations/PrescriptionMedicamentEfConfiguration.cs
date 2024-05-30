@@ -8,6 +8,8 @@ public class PrescriptionMedicamentEfConfiguration : IEntityTypeConfiguration<Pr
 {
     public void Configure(EntityTypeBuilder<PrescriptionMedicament> builder)
     {
+        builder.ToTable("PrescriptionMedicament");
+        
         builder.HasKey(pm => new {pm.IdMedicament, pm.IdPrescription});
 
         builder.Property(pm => pm.Dose).IsRequired(false);

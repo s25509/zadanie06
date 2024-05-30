@@ -8,6 +8,8 @@ public class PatientEfConfiguration : IEntityTypeConfiguration<Patient>
 {
     public void Configure(EntityTypeBuilder<Patient> builder)
     {
+        builder.ToTable("Patient");
+        
         builder.HasKey(p => p.IdPatient);
         builder.Property(p => p.IdPatient).ValueGeneratedOnAdd();
 

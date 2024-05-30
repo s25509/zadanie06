@@ -8,6 +8,8 @@ public class PrescriptionEfConfiguration : IEntityTypeConfiguration<Prescription
 {
     public void Configure(EntityTypeBuilder<Prescription> builder)
     {
+        builder.ToTable("Prescription");
+        
         builder.HasKey(p => p.IdPrescription);
         builder.Property(p => p.IdDoctor).ValueGeneratedOnAdd();
 
