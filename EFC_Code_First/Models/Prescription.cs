@@ -4,9 +4,9 @@ namespace EFC_Code_First.Models;
 
 public class Prescription
 {
-    public int idPrescription { get; set; }
-    public int idPatient { get; set; }
-    public int idDoctor { get; set; }
+    public int IdPrescription { get; set; }
+    public int IdPatient { get; set; }
+    public int IdDoctor { get; set; }
     public DateOnly Date { get; set; }
     public DateOnly DueDate { get; set; }
 
