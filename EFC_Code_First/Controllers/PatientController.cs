@@ -34,7 +34,7 @@ public class PatientController(AppDbContext context) : ControllerBase
                         IdPrescription = pr.IdPrescription,
                         Date = pr.Date,
                         DueDate = pr.DueDate,
-                        IdDoctorNavigation = new DoctorDto
+                        Doctor = new DoctorDto
                         {
                             IdDoctor = pr.IdDoctorNavigation.IdDoctor,
                             FirstName = pr.IdDoctorNavigation.FirstName,
