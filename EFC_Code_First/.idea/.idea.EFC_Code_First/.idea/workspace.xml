@@ -9,8 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="455ffea9-335d-493b-b636-ca0054778ff2" name="Changes" comment="got rid of annoying error">
+    <list default="true" id="455ffea9-335d-493b-b636-ca0054778ff2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EFC_Code_First/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EFC_Code_First/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/PatientController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/PatientController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DTOs/PrescriptionsDTOs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DTOs/PrescriptionsDTOs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Patient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Patient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Prescription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Prescription.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +29,8 @@
     <setting file="mock://G:/00.PJATK/APBD/Zadanie06/EFC_Code_First/Context/AppDbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://G:/00.PJATK/APBD/Zadanie06/EFC_Code_First/Context/AppDbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://G:/00.PJATK/APBD/Zadanie06/EFC_Code_First/Context/AppDbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/00.PJATK/APBD/Zadanie06/EFC_Code_First/Controllers/PatientController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/00.PJATK/APBD/Zadanie06/EFC_Code_First/Controllers/PatientController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://G:/00.PJATK/APBD/Zadanie06/EFC_Code_First/Models/Prescription.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://G:/00.PJATK/APBD/Zadanie06/EFC_Code_First/Models/Prescription.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://G:/00.PJATK/APBD/Zadanie06/EFC_Code_First/Models/PrescriptionMedicament.cs" root0="SKIP_HIGHLIGHTING" />
@@ -118,7 +124,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1717056056466</updated>
-      <workItem from="1717056057642" duration="12271000" />
+      <workItem from="1717056057642" duration="17012000" />
     </task>
     <task id="LOCAL-00001" summary="Project Init">
       <option name="closed" value="true" />
@@ -200,7 +206,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717065666126</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added first endpoint">
+      <option name="closed" value="true" />
+      <created>1717071527263</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717071527263</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added some test data">
+      <option name="closed" value="true" />
+      <created>1717071539213</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1717071539213</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +241,8 @@
     <MESSAGE value="added configurations" />
     <MESSAGE value="did the initial migration" />
     <MESSAGE value="got rid of annoying error" />
-    <option name="LAST_COMMIT_MESSAGE" value="got rid of annoying error" />
+    <MESSAGE value="added first endpoint" />
+    <MESSAGE value="added some test data" />
+    <option name="LAST_COMMIT_MESSAGE" value="added some test data" />
   </component>
 </project>
