@@ -10,6 +10,6 @@ public class Prescription
     public DateOnly Date { get; set; }
     public DateOnly DueDate { get; set; }
 
-    public virtual Doctor IdStudentNavigation { get; set; }
-    public virtual Patient IdGroupNavigation { get; set; }
+    public virtual Doctor IdDoctorNavigation { get; set; }
+    public virtual Patient IdPatientNavigation { get; set; }
 }
